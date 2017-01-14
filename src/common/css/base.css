@@ -19,6 +19,6 @@ h1{ font-size:18px; margin-bottom:20px;}
 del,ins,u,s,a,a:hover{text-decoration:none;}
 body,textarea,input,button,select,keygen,legend{font:14px/1.5 \5fae\8f6f\96c5\9ed1,\5b8b\4f53,arial;color:#333;outline:0;}
 body{background:#fff;}
-a{color:#f00;transition: all .4s ease-in-out;}
-a:hover{color:#fff;}
+a{color:#42b983;transition: all .4s ease-in-out;}
 .router-link-active{ background:#42b983; color:#fff; text-decoration:none}
+.router-link-active a{color:#fff;}

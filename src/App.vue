@@ -1,11 +1,11 @@
 <template>
   <div id="app">
     <v-header></v-header>
-    <h1>{{ msg }}</h1>
     <div class="content">
-	  <router-link to="/news">news</router-link>
-	  <router-link to="/dropload">dropload</router-link>
-	  <router-link to="/down">down</router-link>
+	  <router-link to="/news">时政新闻</router-link>
+	  <router-link to="/dropload">下拉加载</router-link>
+	  <router-link to="/down">游戏下载</router-link>
+    <router-link to="/comments">我的评论</router-link>
     </div>
 	<router-view></router-view>
 	<v-footer></v-footer>
