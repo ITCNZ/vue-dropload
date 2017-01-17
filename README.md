@@ -9,6 +9,7 @@
 * 项目中公共样式如何引入
 * vue-resource 进行ajax请求的使用
 * 使用babel以及webpack 进行编译打包
+* 模态框
 
 ##效果图
 * 整体效果
