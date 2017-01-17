@@ -46,7 +46,7 @@ export default {
 .active.menu-ico span {opacity: 0;}
 .active.menu-ico::before {-webkit-transform: rotate3d(0, 0, 1, 45deg);transform: rotate3d(0, 0, 1, 45deg);}
 .active.menu-ico::after {-webkit-transform: rotate3d(0, 0, 1, -45deg);transform: rotate3d(0, 0, 1, -45deg);}
-.slideNav{position:fixed;top:0;bottom:0;width:45%;height:100%;background:#efefef;}
+.slideNav{position:fixed;top:0;bottom:40px;width:45%;height:100%;background:#efefef;}
 .slideNav ul{width:100%;height:100%;z-index: 99;position: relative;background:#efefef;}
 .slideNav li{width:100%; height:40px; line-height:40px; text-align:center;}
 .mask{width: 100%;height: 100%;position: fixed;left: 0;top: 0;right: 0;bottom: 0;background:rgba(0,0,0,.7);}
