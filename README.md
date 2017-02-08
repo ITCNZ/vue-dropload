@@ -13,9 +13,9 @@
 
 ##安装
 * 本例使用vue-cli开发的，所以可以直接clone到本地
-# install dependencies
+#install dependencies
 * npm install
-# serve with hot reload at localhost:8080
+#serve with hot reload at localhost:8080
 * npm run dev
 
 ##效果图
