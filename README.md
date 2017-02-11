@@ -11,6 +11,17 @@
 * 使用babel以及webpack 进行编译打包
 * 模态框
 
+##安装
+* 本例使用vue-cli开发的，所以可以直接clone到本地
+``` bash
+# install dependencies
+npm install
+
+# serve with hot reload at localhost:8080
+npm run dev
+
+```
+
 ##效果图
 * 整体效果
 ![image](https://github.com/ITCNZ/vue-dropload/blob/master/renders/1.jpg)
