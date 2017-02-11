@@ -10,7 +10,7 @@
 * vue-resource 进行ajax请求的使用
 * 使用babel以及webpack 进行编译打包
 * 模态框
-
+* 轮播组件
 ##安装
 * 本例使用vue-cli开发的，所以可以直接clone到本地
 ``` bash
