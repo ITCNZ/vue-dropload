@@ -23,12 +23,11 @@ export default {
   data () {
   	return {
       options: {
-        index: this.optionsInit.index || 0,// ³õÊ¼Ïî
-        isLoop:  this.optionsInit.isLoop || true,// ÊÇ·ñÂÖÑ­
-        isAuto: this.optionsInit.isAuto || false,// ×Ô¶¯¹ö¶¯
-        time:  this.optionsInit.time || 3000,// ¹ö¶¯¼ä¸ô
-        moveTime:  this.optionsInit.moveTime || 700,// »¬¶¯³ÖĞø¶à¾Ã¿ÉÒÔÇĞ»»
-        scale:  this.optionsInit.scale || 0.5// ¿í¸ß±È
+        index: this.optionsInit.index || 0,// åˆå§‹é¡¹
+        isAuto: this.optionsInit.isAuto || false,// è‡ªåŠ¨æ»šåŠ¨
+        time:  this.optionsInit.time || 3000,// æ»šåŠ¨é—´éš”
+        moveTime:  this.optionsInit.moveTime || 700,// æ»‘åŠ¨æŒç»­å¤šä¹…å¯ä»¥åˆ‡æ¢
+        scale:  this.optionsInit.scale || 0.5// å®½é«˜æ¯”
       },
       windowW: window.screen.availWidth,
       ulLeft: 0,
@@ -36,22 +35,22 @@ export default {
         s: [],
         d: ""
       },
-      setInter:''// ¶¨Ê±Æ÷
+      setInter:''// å®šæ—¶å™¨
   	}
   },
   computed: {
-    slideHeight: function () {// ¸ù¾İ±ÈÀı¼ÆËã¸ß¶È
+    slideHeight: function () {// æ ¹æ®æ¯”ä¾‹è®¡ç®—é«˜åº¦
         return this.windowW * this.options.scale;
     },
-    slideWidth: function () {// ¼ÆËãul¿í¶È
+    slideWidth: function () {// è®¡ç®—ulå®½åº¦
       return this.windowW * this.datas.length
     },
-    pages: function () {// »ñÈ¡Ò³Ãæ¸öÊı
+    pages: function () {// è·å–é¡µé¢ä¸ªæ•°
       return this.datas.length;
     }
   },
   created() {
-    this.autoPlay();// ×Ô¶¯¹ö¶¯
+    this.autoPlay();// è‡ªåŠ¨æ»šåŠ¨
     this.ulLeft = -this.options.index * this.windowW;
   },
   methods: {
@@ -66,11 +65,11 @@ export default {
        let b = Math.abs(e.targetTouches[0].pageY - this.touch.s[1]);
         //console.log("dMove:" + this.touch.d)
         if (a >= b && this.touch.d == "") {
-            this.touch.d = 1;// ×óÓÒ
+            this.touch.d = 1;// å·¦å³
         } else if (this.touch.d == "") {
-            this.touch.d = 0;// ÉÏÏÂ»òÕßÆ«ÉÏÏÂ
+            this.touch.d = 0;// ä¸Šä¸‹æˆ–è€…åä¸Šä¸‹
         }
-        if (this.touch.d == 1) {// ×óÓÒ¹ö¶¯
+        if (this.touch.d == 1) {// å·¦å³æ»šåŠ¨
            e.preventDefault();
            this.ulLeft = -this.options.index * this.windowW + e.targetTouches[0].pageX - this.touch.s[0];
         }
