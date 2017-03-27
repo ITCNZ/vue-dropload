@@ -25,7 +25,4 @@ npm run dev
 
 ## 效果图
 * 整体效果
-![image](https://github.com/ITCNZ/vue-dropload/blob/master/renders/1.jpg)
-
-* 侧边菜单
-![image](https://github.com/ITCNZ/vue-dropload/blob/master/renders/2.jpg)
+![image](https://github.com/ITCNZ/vue-dropload/blob/master/renders/1.jpg) ![image](https://github.com/ITCNZ/vue-dropload/blob/master/renders/2.jpg)
